@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+/* header section styleings */
+#header{
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    margin: 0 100px 0;
+}
+.logo{
+    margin-left: 30px;
+    width: 100px;
+}
+.header-text{
+    max-width: 350px;
+    margin-top: 140px;
+}
+.header-text h1{
+    font-size: 34px;
+
+}
+.square{
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background: #f67c92;
+    margin: 15px 0;
+}
+.common-btn{
+    padding: 18px 14px;
+    background: transparent;
+    /* outline: none; */
+    border: 2px solid #f67c92;
+    font-weight:bold ;
+    cursor: pointer;
+}
+.header-text p{
+    font-size:15px;
+    line-height: 18px;
+    color: #777;
+}
+.header-text button{
+    margin:20px 0 60px 0 ;
+}
+/* .header-text span[class^="line"]{
+    
+    
+} */
+.line-1{
+    background: #f67c92;
+    display: block;
+    width:15px;
+    height: 15px;
+    margin-bottom: 8px;
+}
+.line-2{
+    background: #f67c92;
+    display: block;
+    width:80px;
+    height: 1px;
+    margin-bottom: 8px;
+}
+ .line-3{
+    background: #f67c92;
+    display: block;
+    width:60px;
+    height: 1px;
+}
+.line{
+    line-height:8px ;
+}
+/* Navigation menu and icon styling */
+#side-nav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    transition: .5s ;
+    top: 0;
+    background: #f67c92;
+    z-index: 20;
+   right:-250px;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+#menu-btn{
+    width: 50px;
+    position: fixed;
+    right: 65px;
+    top: 35px;
+    z-index: 30;
+    cursor: pointer;
+}
+#navcheck:checked ~ #side-nav{
+    right: 0;
+}
+/* About section stylings */
+#about{
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#about .about-left-col{
+    flex-basis: 50%;
+}
+#about .about-right-col{
+    flex-basis: 50%;
+    /* text-align: right; */
+  direction: rtl;
+}
+#about .about-left-col img{
+    width: 100%;
+}
+.about-text{
+    max-width: 500px;
+    margin-right: 100px;
+    display: inline-block;
+}
+#about p{
+    margin-bottom: 2em;
+}
+.about-text h2{
+    margin: 30px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+}
+.about-text h3{
+    margin: 30px 0 10px;
+    font-size: 28px;
+    font-style: italic;
+    color: gray;
+}
+
+/* Features section stylings */
+#features{
+    padding:50px 0 ;
+}
+.feature-row{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.feature-col{
+    flex-basis:25% ;
+    text-align: center;
+}
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.feature-btn{
+    margin:80px auto 0;
+    display:flex ;
+    align-items: flex-end;
+    justify-content: center;
+}
+.feature-btn .line{
+  direction: rtl;
+    /* text-align: right; */
+    display: inline-block;
+    margin-right: 25px;
+}
+/* Courses section styelings */
+#courses{
+    padding: 100px 0;
+}
+.course-row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.course-right-col{
+    flex-basis: 50%;
+}
+.course-right-col img{
+    width: 100%;
+}
+.course-left-col{
+    flex-basis: 50%;
+}
+.course-text{
+    max-width: 350px;
+}
+.course-text button{
+    margin:30px 0 ;
+}
