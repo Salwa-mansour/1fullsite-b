@@ -6,16 +6,19 @@
 /* header section styleings */
 #header{
     height: 100vh;
-    background-image: url(../images/background.png);
+    background: url(../images/background.png );
     background-position: center;
+  
     background-size: cover;
 }
+
 .container{
     margin: 0 100px 0;
 }
 .logo{
     margin-left: 30px;
     width: 100px;
+    /* position: fixed; */
 }
 .header-text{
     max-width: 350px;
@@ -32,8 +35,10 @@
     background: #f67c92;
     margin: 15px 0;
 }
-.common-btn{
-    padding: 18px 14px;
+.common-btn,
+input{
+    padding: 14px 18px;
+    margin: 2px 0;
     background: transparent;
     /* outline: none; */
     border: 2px solid #f67c92;
@@ -202,4 +207,48 @@ nav ul li a{
 }
 .course-text button{
     margin:30px 0 ;
+}
+
+/* social icons styleings */
+.social-icons{
+    width: 50px;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.social-icons img{
+    display: block;
+    width: 20px;
+    margin: 10px 20px;
+    cursor: pointer;
+    background-color: #f67c92;
+    padding: 8px;
+    border-radius: 25%;
+    
+}
+
+/* -------media queries-------- */
+
+@media only screen and (max-width:774px){
+    #header{
+        background-image: none;
+    }
+    .container{
+        margin: 0 50px 0;
+    }
+    .logo{
+        margin-left:20px;
+        width: 70px;
+        /* position: fixed; */
+    }
+    .header-text{
+        /* max-width: 350px; */
+        margin-top: 70px;
+    }
+    .header-text h1{
+        font-size: 25px;
+    
+    }
 }
