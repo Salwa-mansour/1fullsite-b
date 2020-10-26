@@ -4,14 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete website with html and css</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style2.css">
 </head>
 <body>
-    <!-- header section markup-->
-    <section id="header">
-        
+     <!-- Navigation menu and icon markup -->
+    <div class="top-part">
+        <img src="../images/logo.png" alt="" class="logo">
+         <input type="checkbox" name="" id="navcheck" style="display: none;">
+    <label for="navcheck"><img src="../images/menu.png" id="menu-btn" alt=""></label>
+    <nav id="side-nav">   
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About as</a></li>
+            <li><a href="#">Featuers</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Offer</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="max-width">
+          <!-- header section markup-->
+        <section class="header">
+          
         <div class="container">
-            <img src="../images/logo.png" alt="" class="logo">
+          
+        
             <div class="header-text">
                 <h1 >The purpose is  teach, bring Education to people</h1>
                <span class="square"></span>
@@ -25,23 +43,11 @@
              </div>
          </div>
     </section>
-    <!-- Navigation menu and icon markup -->
-    <input type="checkbox" name="" id="navcheck" style="display: none;">
-    <label for="navcheck"><img src="../images/menu.png" id="menu-btn" alt=""></label>
-    <nav id="side-nav">   
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About as</a></li>
-            <li><a href="#">Featuers</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Offer</a></li>
-            <li><a href="#">Contact us</a></li>
-        </ul>
-    </nav>
+ 
     <!-- About section markup -->
     <section id="about">
         <div class="about-left-col">
-            <img src="../images/about.png" alt="">
+            <img src="../images/about.png" alt="" class="pic">
         </div>
         <div class="about-right-col">
             <div class="about-text">
@@ -79,8 +85,7 @@
                 <h4>Learn Anywhere</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
-        </div>
-        <div class="feature-btn">
+             <div class="feature-btn">
             <div class="line">
                 <span class="line-1"></span>
                 <span class="line-2"></span>
@@ -88,6 +93,8 @@
             </div>
             <button class="common-btn">Start free Trial</button>
         </div>
+        </div>
+       
     </section>
 
     <!-- Courses scetion markup -->
@@ -109,12 +116,10 @@
                     </div>
             </div>
             <div class="course-right-col">
-                <img src="../images/course.png" alt="">
+                <img src="../images/course.png" alt="" class="pic">
             </div>
              </div>
-      
-         </div>
-    </section>
+        </section>
     <!-- offers section markup -->
             <!-- the same header with oppsite place for img -->
     <!-- contact section markup -->
@@ -129,8 +134,9 @@
                             <input type="text" placeholder="Enter Name">
                             <input type="email" placeholder="Enter Email">
                             <input type="password" placeholder="Enter passward">
-                        </form>
-                            <button class="common-btn">View All Courses</button>
+                      
+                            <button class="common-btn">View All Courses</button>  </form>
+                           
                             <div class="line">
                                 <span class="line-1"></span>
                                 <span class="line-2"></span>
@@ -139,12 +145,10 @@
                         </div>
                 </div>
                 <div class="course-right-col">
-                    <img src="../images/contact.png" alt="">
+                    <img src="../images/contact.png" alt="" class="pic">
                 </div>
                  </div>
-          
-             </div>
-        </section>
+           </section>
         <!-- social icons markup -->
         <div class="social-icons">
             <img src="../images/facebook.png" alt="">
@@ -152,6 +156,12 @@
             <img src="../images/twitter.png" alt="">
             <img src="../images/linkedin.png" alt="">
         </div>
+    </div>
+         </div>
+  
+             </div>
+       
+    
 
         </body>
 </html>

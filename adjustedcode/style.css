@@ -1,11 +1,36 @@
 *{
     padding: 0;
     margin: 0;
-   
+   font-size: calc(0.95rem + 0.5vw);
+   /* box-sizing: border-box; */
+}
+body{
+    /* width: 100%; */
+}
+.max-width{
+    max-width: 900px;
+    /* margin: auto; */
 }
 img{
-    width: 100%;
+    /* width: 100%; */
+   
 }
+
+h1{
+    font-size: calc(1.5rem + 0.5vw);
+}
+.header::befor{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.788);
+}
+/* .container{
+    z-index: 10;
+} */
 .logo{
     margin-left: 30px;
     width: 100px;
@@ -32,7 +57,7 @@ nav ul li a{
 }
 #menu-btn{
     width: 50px;
-    position: fixed;
+    /* position: fixed; */
     right: 65px;
     top: 35px;
     z-index: 30;
